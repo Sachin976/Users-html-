@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Signup</title>
+        <link rel=icon href="/img/user.png">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        {{>header}}
+        <div class="centered-form">
+            <div class="centered-form__box">
+                <form id="signup-form" >
+                    <label>Full name</label>
+                    <br>
+                    <input id="name" type="text" placeholder="mike smith" required>
+                    <br>
+                    <label>Email</label>
+                    <br>
+                    <input id="email" type="email" placeholder="mike@example.com" required>
+                    <br>
+                    <label>Phone</label>
+                    <br>
+                    <input id="phone" type="tel" placeholder="1234567890" required>
+                    <br>
+                    <label>Password</label>
+                    <br>
+                    <input id="password" type="password" required>
+                    <br>
+                    <label>Age</label>
+                    <br>
+                    <input id="age" type="number">
+                    <br>
+                    <button >Signup</button>
+                </form>
+            </div>
+        </div>
+        
+        <script src="/js/signup.js"></script>
+    </body>
+</html>

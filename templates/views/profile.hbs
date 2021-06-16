@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Profile</title>
+        <link rel=icon href="/img/user.png">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        {{>header}}
+        <div class="row">
+            <div class="column">
+                <img src="/img/Profile.png" height="200" width="200">
+            </div>
+            <div class="column">
+                <p><strong>Name: </strong>{{name}}</p>
+                <p><strong>Email: </strong>{{email}}</p>
+                <p><strong>Phone: </strong>{{phone}}</p>
+                <p><strong>Age: </strong>{{age}}</p>
+            </div>
+        </div>
+        <div class="controls">
+            <button id="update" >update</button>
+            <button id="delete">delete</button>
+            <button id="logout">logout</button>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script>
+        <script src="/js/profile.js"></script> 
+    </body>
+</html>

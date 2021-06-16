@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>User Update</title>
+        <link rel=icon href="/img/user.png">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        {{>header}}
+        <div class="centered-form">
+            <div class="centered-form__box">
+                <form id="update-form" >
+                    <label>Full name</label>
+                    <br>
+                    <input id="name" type="text" placeholder="mike smith" >
+                    <br>
+                    <label>Email</label>
+                    <br>
+                    <input id="email" type="email" placeholder="mike@example.com" >
+                    <br>
+                    <label>Phone</label>
+                    <br>
+                    <input id="phone" type="tel" placeholder="1234567890" >
+                    <br>
+                    <label>Password</label>
+                    <br>
+                    <input id="password" type="password" >
+                    <br>
+                    <label>Birth date</label>
+                    <br>
+                    <input id="b-day" type="date">
+                    <br>
+                    <button type="submit">Update</button>
+                </form>
+            </div>
+        </div>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.6.0/qs.min.js"></script>
+        <script src="/js/update.js"></script>
+    </body>
+</html>
